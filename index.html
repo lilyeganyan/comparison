@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+       function LMatch(){
+        let x = document.getElementById("first").value;
+        let y = document.getElementById("second").value;
+        var longestmatch = 0;
+        for(var i = 0; i < x.length; i++){
+            for(var j = 0; j < y.length; j++){
+                var match = 0;
+                while(x[i + match] == y[j + match]){
+                    var S = 0;
+                    S = [i];
+                    match++;
+                }
+                if (match > longestmatchdo){
+                    longestmatch = match;
+                }
+            }
+        }
+        alert(longestmatch);
+       };
+       let btn = document.getElementById("btn");
+       btn.addEventListener('Click', event =>{
+        Lmatch();
+       });
+
+
+        </script>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter text" id="first">
+        <input type="text" placeholder="Enter text" id="second">
+        <button id="btn">Click</button>
+    </body>
+</html>
